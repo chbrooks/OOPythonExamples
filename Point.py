@@ -1,6 +1,6 @@
 class Point :
     ## here is a constructor.
-    def __init__(self, x,y) :
+    def __init__(self, x=0,y=0) :
         self.xval = x
         self.yval = y
 
@@ -15,9 +15,12 @@ class Point :
     def __sub__(self, other):
         return Point(self.xval - other.xval, self.yval - other.yval)
 
+    def __eq__(self, other):
+        return self.xval == other.xval and self.yval == other.yval
+
     ## This is how we overload the display method
     def __repr__(self):
-        return f"x: {self.xval}, y: {self.yval}"
+       return f"x: {self.xval}, y: {self.yval}"
 
 
 

@@ -1,6 +1,7 @@
 ## Let's implement a graph as an adjacency matrix, in a non-OO fashion.
 import readline
 
+
 ## create a 'graph' (really an adjacency matrix) on nVertices x nVertices
 def make_graph(n_vertices) :
     return [[0] * n_vertices] * n_vertices
